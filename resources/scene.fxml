@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="net.vadamdev.customcontentsoftware.Controller">
+   <children>
+      <Button layoutY="2.0" mnemonicParsing="false" onAction="#loadDumpFile" prefHeight="31.0" prefWidth="100.0" text="Load Dump File" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0" />
+      <Button fx:id="applyTextureButton" disable="true" layoutX="111.0" layoutY="5.0" mnemonicParsing="false" onAction="#applyToSelectedTexture" prefHeight="31.0" prefWidth="100.0" text="Apply Texture" AnchorPane.leftAnchor="111.0" />
+      <ListView fx:id="itemsList" layoutX="9.0" layoutY="47.0" onMouseClicked="#computeSelectedItem" prefHeight="345.0" prefWidth="205.0" />
+      <ProgressBar fx:id="progressBar" layoutX="256.0" layoutY="5.0" prefHeight="31.0" prefWidth="205.0" progress="0.0" />
+      <Button fx:id="createResourcepackButton" disable="true" layoutX="465.0" layoutY="5.0" mnemonicParsing="false" onAction="#createResourcepack" prefHeight="31.0" prefWidth="129.0" text="Create Resourcepack" />
+      <ImageView fx:id="textureView" fitHeight="205.0" fitWidth="205.0" layoutX="256.0" layoutY="98.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="resourcepackName" layoutX="465.0" layoutY="56.0" prefHeight="25.0" prefWidth="129.0" promptText="Name Here" text="CCL's Resources" />
+      <Label layoutX="465.0" layoutY="39.0" text="Resourcepack Name" />
+      <Label layoutX="461.0" layoutY="81.0" text="Resourcepack Description" />
+      <TextArea fx:id="resourcepackDescription" layoutX="465.0" layoutY="98.0" prefHeight="45.0" prefWidth="129.0" promptText="Description Here" text="Description Here" />
+      <Button layoutX="465.0" layoutY="361.0" mnemonicParsing="false" onAction="#loadResourcepack" prefHeight="31.0" prefWidth="129.0" text="Load Resourcepack" />
+   </children>
+</AnchorPane>
